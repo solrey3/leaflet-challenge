@@ -101,7 +101,7 @@ function createFeatures(earthquakeData){
            color: colorMag(mag),
            fillColor: colorMag(mag),
            fillOpacity: 0.75,
-           radius: Math.pow(2, mag) * 1000,  
+           radius: Math.pow(2, (mag+1)) * 1000,  
          })
          // Include popups that provide additional information about the earthquake when a marker is clicked.
          .bindPopup("<h3>" + feature.properties.place + "</h3><hr><p>Magnitude: " + mag + "</p>")
